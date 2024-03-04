@@ -2,7 +2,7 @@ package controller
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/songquanpeng/one-api/common"
+	"github.com/greeeds/one-api/common"
 	"net/http"
 )
 

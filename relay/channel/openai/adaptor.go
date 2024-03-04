@@ -4,15 +4,15 @@ import (
 	"errors"
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"github.com/songquanpeng/one-api/common"
-	"github.com/songquanpeng/one-api/relay/channel"
-	"github.com/songquanpeng/one-api/relay/channel/ai360"
-	"github.com/songquanpeng/one-api/relay/channel/baichuan"
-	"github.com/songquanpeng/one-api/relay/channel/minimax"
-	"github.com/songquanpeng/one-api/relay/channel/mistral"
-	"github.com/songquanpeng/one-api/relay/channel/moonshot"
-	"github.com/songquanpeng/one-api/relay/model"
-	"github.com/songquanpeng/one-api/relay/util"
+	"github.com/greeeds/one-api/common"
+	"github.com/greeeds/one-api/relay/channel"
+	"github.com/greeeds/one-api/relay/channel/ai360"
+	"github.com/greeeds/one-api/relay/channel/baichuan"
+	"github.com/greeeds/one-api/relay/channel/minimax"
+	"github.com/greeeds/one-api/relay/channel/mistral"
+	"github.com/greeeds/one-api/relay/channel/moonshot"
+	"github.com/greeeds/one-api/relay/model"
+	"github.com/greeeds/one-api/relay/util"
 	"io"
 	"net/http"
 	"strings"
@@ -35,7 +35,7 @@ func (a *Adaptor) GetRequestURL(meta *util.RelayMeta) (string, error) {
 		task := strings.TrimPrefix(requestURL, "/v1/")
 		model_ := meta.ActualModelName
 		model_ = strings.Replace(model_, ".", "", -1)
-		// https://github.com/songquanpeng/one-api/issues/67
+		// https://github.com/greeeds/one-api/issues/67
 		model_ = strings.TrimSuffix(model_, "-0301")
 		model_ = strings.TrimSuffix(model_, "-0314")
 		model_ = strings.TrimSuffix(model_, "-0613")
@@ -57,7 +57,7 @@ func (a *Adaptor) SetupRequestHeader(c *gin.Context, req *http.Request, meta *ut
 	}
 	req.Header.Set("Authorization", "Bearer "+meta.APIKey)
 	if meta.ChannelType == common.ChannelTypeOpenRouter {
-		req.Header.Set("HTTP-Referer", "https://github.com/songquanpeng/one-api")
+		req.Header.Set("HTTP-Referer", "https://github.com/greeeds/one-api")
 		req.Header.Set("X-Title", "One API")
 	}
 	return nil

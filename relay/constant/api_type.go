@@ -1,7 +1,7 @@
 package constant
 
 import (
-	"github.com/songquanpeng/one-api/common"
+	"github.com/greeeds/one-api/common"
 )
 
 const (

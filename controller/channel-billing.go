@@ -4,11 +4,11 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/songquanpeng/one-api/common"
-	"github.com/songquanpeng/one-api/common/config"
-	"github.com/songquanpeng/one-api/common/logger"
-	"github.com/songquanpeng/one-api/model"
-	"github.com/songquanpeng/one-api/relay/util"
+	"github.com/greeeds/one-api/common"
+	"github.com/greeeds/one-api/common/config"
+	"github.com/greeeds/one-api/common/logger"
+	"github.com/greeeds/one-api/model"
+	"github.com/greeeds/one-api/relay/util"
 	"io"
 	"net/http"
 	"strconv"
@@ -17,7 +17,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-// https://github.com/songquanpeng/one-api/issues/79
+// https://github.com/greeeds/one-api/issues/79
 
 type OpenAISubscriptionResponse struct {
 	Object             string  `json:"object"`

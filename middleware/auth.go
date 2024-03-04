@@ -3,8 +3,8 @@ package middleware
 import (
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-gonic/gin"
-	"github.com/songquanpeng/one-api/common"
-	"github.com/songquanpeng/one-api/model"
+	"github.com/greeeds/one-api/common"
+	"github.com/greeeds/one-api/model"
 	"net/http"
 	"strings"
 )

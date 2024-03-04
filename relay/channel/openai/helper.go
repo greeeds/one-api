@@ -1,6 +1,6 @@
 package openai
 
-import "github.com/songquanpeng/one-api/relay/model"
+import "github.com/greeeds/one-api/relay/model"
 
 func ResponseText2Usage(responseText string, modeName string, promptTokens int) *model.Usage {
 	usage := &model.Usage{}

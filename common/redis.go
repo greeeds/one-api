@@ -2,8 +2,7 @@ package common
 
 import (
 	"context"
-	"github.com/go-redis/redis/v8"
-	"github.com/songquanpeng/one-api/common/logger"
+	"github.com/greeeds/one-api/common/logger"
 	"os"
 	"time"
 )

@@ -2,8 +2,8 @@ package util
 
 import (
 	"errors"
-	"github.com/songquanpeng/one-api/relay/constant"
-	"github.com/songquanpeng/one-api/relay/model"
+	"github.com/greeeds/one-api/relay/constant"
+	"github.com/greeeds/one-api/relay/model"
 	"math"
 )
 

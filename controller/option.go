@@ -2,9 +2,9 @@ package controller
 
 import (
 	"encoding/json"
-	"github.com/songquanpeng/one-api/common/config"
-	"github.com/songquanpeng/one-api/common/helper"
-	"github.com/songquanpeng/one-api/model"
+	"github.com/greeeds/one-api/common/config"
+	"github.com/greeeds/one-api/common/helper"
+	"github.com/greeeds/one-api/model"
 	"net/http"
 	"strings"
 

@@ -2,9 +2,9 @@ package middleware
 
 import (
 	"fmt"
-	"github.com/songquanpeng/one-api/common"
-	"github.com/songquanpeng/one-api/common/logger"
-	"github.com/songquanpeng/one-api/model"
+	"github.com/greeeds/one-api/common"
+	"github.com/greeeds/one-api/common/logger"
+	"github.com/greeeds/one-api/model"
 	"net/http"
 	"strconv"
 	"strings"

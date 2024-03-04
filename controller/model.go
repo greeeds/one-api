@@ -3,14 +3,14 @@ package controller
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"github.com/songquanpeng/one-api/relay/channel/ai360"
-	"github.com/songquanpeng/one-api/relay/channel/baichuan"
-	"github.com/songquanpeng/one-api/relay/channel/minimax"
-	"github.com/songquanpeng/one-api/relay/channel/mistral"
-	"github.com/songquanpeng/one-api/relay/channel/moonshot"
-	"github.com/songquanpeng/one-api/relay/constant"
-	"github.com/songquanpeng/one-api/relay/helper"
-	relaymodel "github.com/songquanpeng/one-api/relay/model"
+	"github.com/greeeds/one-api/relay/channel/ai360"
+	"github.com/greeeds/one-api/relay/channel/baichuan"
+	"github.com/greeeds/one-api/relay/channel/minimax"
+	"github.com/greeeds/one-api/relay/channel/mistral"
+	"github.com/greeeds/one-api/relay/channel/moonshot"
+	"github.com/greeeds/one-api/relay/constant"
+	"github.com/greeeds/one-api/relay/helper"
+	relaymodel "github.com/greeeds/one-api/relay/model"
 )
 
 // https://platform.openai.com/docs/api-reference/models/list

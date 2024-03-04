@@ -3,9 +3,9 @@ package controller
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/songquanpeng/one-api/common"
-	"github.com/songquanpeng/one-api/common/config"
-	"github.com/songquanpeng/one-api/model"
+	"github.com/greeeds/one-api/common"
+	"github.com/greeeds/one-api/common/config"
+	"github.com/greeeds/one-api/model"
 	"net/http"
 	"strings"
 

@@ -1,7 +1,7 @@
 package util
 
 import (
-	"github.com/songquanpeng/one-api/common/config"
+	"github.com/greeeds/one-api/common/config"
 	"net/http"
 	"time"
 )

@@ -1,7 +1,7 @@
 package config
 
 import (
-	"github.com/songquanpeng/one-api/common/helper"
+	"github.com/greeeds/one-api/common/helper"
 	"os"
 	"strconv"
 	"sync"

@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"github.com/songquanpeng/one-api/relay/util"
+	"github.com/greeeds/one-api/relay/util"
 	"io"
 	"net/http"
 )

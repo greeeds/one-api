@@ -465,7 +465,7 @@ const SystemSetting = () => {
             <Header.Subheader>
               用以支持通过微信进行登录注册，
               <a
-                href='https://github.com/songquanpeng/wechat-server'
+                href='https://github.com/greeeds/wechat-server'
                 target='_blank'
               >
                 点击此处

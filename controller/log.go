@@ -2,8 +2,8 @@ package controller
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/songquanpeng/one-api/common/config"
-	"github.com/songquanpeng/one-api/model"
+	"github.com/greeeds/one-api/common/config"
+	"github.com/greeeds/one-api/model"
 	"net/http"
 	"strconv"
 )

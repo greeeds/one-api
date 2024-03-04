@@ -1,6 +1,6 @@
 package aiproxy
 
-import "github.com/songquanpeng/one-api/relay/channel/openai"
+import "github.com/greeeds/one-api/relay/channel/openai"
 
 var ModelList = []string{""}
 

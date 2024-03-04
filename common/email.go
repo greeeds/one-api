@@ -6,7 +6,7 @@ import (
 	"encoding/base64"
 	"errors"
 	"fmt"
-	"github.com/songquanpeng/one-api/common/config"
+	"github.com/greeeds/one-api/common/config"
 	"net/smtp"
 	"strings"
 	"time"

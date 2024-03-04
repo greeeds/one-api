@@ -1,6 +1,6 @@
 package common
 
-import "github.com/songquanpeng/one-api/common/helper"
+import "github.com/greeeds/one-api/common/helper"
 
 var UsingSQLite = false
 var UsingPostgreSQL = false

@@ -2,8 +2,8 @@ package channel
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/songquanpeng/one-api/relay/model"
-	"github.com/songquanpeng/one-api/relay/util"
+	"github.com/greeeds/one-api/relay/model"
+	"github.com/greeeds/one-api/relay/util"
 	"io"
 	"net/http"
 )

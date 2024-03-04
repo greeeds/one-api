@@ -3,10 +3,10 @@ package baidu
 import (
 	"errors"
 	"github.com/gin-gonic/gin"
-	"github.com/songquanpeng/one-api/relay/channel"
-	"github.com/songquanpeng/one-api/relay/constant"
-	"github.com/songquanpeng/one-api/relay/model"
-	"github.com/songquanpeng/one-api/relay/util"
+	"github.com/greeeds/one-api/relay/channel"
+	"github.com/greeeds/one-api/relay/constant"
+	"github.com/greeeds/one-api/relay/model"
+	"github.com/greeeds/one-api/relay/util"
 	"io"
 	"net/http"
 )
@@ -37,7 +37,7 @@ func (a *Adaptor) GetRequestURL(meta *util.RelayMeta) (string, error) {
 	case "Embedding-V1":
 		fullRequestURL = "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/embeddings/embedding-v1"
 	default:
-               fullRequestURL = "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/" + meta.ActualModelName
+		fullRequestURL = "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/" + meta.ActualModelName
 	}
 	var accessToken string
 	var err error
