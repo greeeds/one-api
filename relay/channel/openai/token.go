@@ -3,12 +3,12 @@ package openai
 import (
 	"errors"
 	"fmt"
+	"github.com/pkoukk/tiktoken-go"
 	"github.com/greeeds/one-api/common"
 	"github.com/greeeds/one-api/common/config"
 	"github.com/greeeds/one-api/common/image"
 	"github.com/greeeds/one-api/common/logger"
 	"github.com/greeeds/one-api/relay/model"
-	"github.com/pkoukk/tiktoken-go"
 	"math"
 	"strings"
 )
