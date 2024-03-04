@@ -8,6 +8,7 @@ import (
 	"github.com/greeeds/one-api/common/image"
 	"github.com/greeeds/one-api/common/logger"
 	"github.com/greeeds/one-api/relay/model"
+	"github.com/pkoukk/tiktoken-go"
 	"math"
 	"strings"
 )
