@@ -65,7 +65,12 @@ func SendEmail(subject string, receiver string, content string) error {
 		"Date: %s\r\n"+
 		"Content-Type: text/html; charset=UTF-8\r\n\r\n%s\r\n",
 		receiver, config.SystemName, config.SMTPFrom, encodedSubject, messageId, time.Now().Format(time.RFC1123Z), content))
-	auth := smtp.PlainAuth("", config.SMTPAccount, config.SMTPToken, config.SMTPServer)
+	var auth smtp.Auth
+	if config.SMTPAuthLoginEnabled {
+		auth = LoginAuth(config.SMTPAccount, config.SMTPToken)
+	} else {
+		auth = smtp.PlainAuth("", config.SMTPAccount, config.SMTPToken, config.SMTPServer)
+	}
 	addr := fmt.Sprintf("%s:%d", config.SMTPServer, config.SMTPPort)
 	to := strings.Split(receiver, ";")
 
